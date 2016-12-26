@@ -1,0 +1,236 @@
+/* Основные стили для сайта */
+
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;    
+    background-color: #DE6401;
+    background-image: url(/images/sunrise.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    color: #610B0B;       
+}
+
+/* Контейнер растягивается на весь контент */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;    
+    background-color: #F7F2E0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;    
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.8em;
+    text-align: center;
+    margin-bottom: 15px;    
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+header {
+    margin-bottom: 40px;
+    padding: 20px 30px;
+    background-color: #FA8258;
+    
+}
+
+/* Верхнее меню на всех страницах */
+
+.top-menu li {
+    display: inline-block;
+}
+
+.top-menu li a {    
+    color: #F3F0DB;
+    font-size: 1.2em;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.top-menu li a:hover {
+    background-color: #DF3A01; 
+}
+
+/* собственно, текст с шапкой, заголовком и коментариями */
+.main-content {
+    padding: 10px 30px;
+}
+
+.comments-main {
+    padding: 10px 30px;
+}
+
+.epigraf {
+    font-style: italic;
+    margin-left: 40%;
+}
+
+.epigraf-author {
+    font-style: italic;
+    text-align: right;
+}
+
+.date {
+    font-style: italic;
+    margin-top: 20px;   
+}
+
+/* Название текста, для списков */
+
+.title {    
+    font-size: 1.5em;
+    color: #b74242;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+/* Короткое описание текста, для списков */
+
+.about-text {
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #ffffff;
+}
+
+/* полная шапка текста, для страницы текста */
+
+.full-text-head {
+    background-color: #ffd6b6;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+}
+
+/* уголок админа внутри текста */
+
+.admin {
+    background-color: #ffd6b6;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.a-inline {
+    color: #610B0B; 
+}
+
+.a-inline:hover {
+    color: #aa4b3f; 
+}
+
+
+.form-item {
+    width: 600px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.text-input {
+    width: 600px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;    
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em;
+}
+
+.error {
+    margin-left: 10px;
+    color: red;
+}
+
+.button {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #FA8258;
+    color: #F3F0DB;
+    font-size: 1.2em;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #DF3A01;    
+}
+
+/* стили для комментариев к текстам */
+
+.comment-main {
+    background-color: #ffd6b6;
+    padding: 20px 15px;
+    margin-bottom: 30px;
+}
+
+.comment {
+    padding-bottom: 20px;
+    background-color: #F7F2E0;
+    margin-bottom: 30px;
+}
+
+.comment-head {
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    background-color: #FA8258;
+    color: #FAFAFA;
+}
+
+.name {
+    display: block;
+    float: left;    
+    color: #FAFAFA;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.name:hover {
+    text-decoration: underline;
+}
+
+.comment-date {
+    display: block;
+    float: right;
+}
+
+.comment-text {
+    padding: 10px 30px;
+    line-height: 1.3;
+}
+
+footer {
+    padding: 10px 30px;
+}

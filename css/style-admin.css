@@ -1,0 +1,116 @@
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;    
+    background-color: #F7F2E0;    
+    color: #610B0B;   
+    padding: 30px;    
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;    
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.menu {
+    margin-bottom: 20px;
+    padding: 0 30px;
+    background-color: #FA8258;
+}
+
+.menu a {
+    display: inline-block;    
+    color: #F3F0DB;
+    font-size: 1.2em;
+    padding: 15px 10px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #DF3A01; 
+}
+
+
+.form-item {
+    margin-bottom: 10px;
+}
+
+.error {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: red;
+}
+
+.table-characters {
+    margin: 30px 0;
+    border-collapse: collapse;
+}
+
+.table-characters td {
+    padding: 5px 20px;
+    border: 1px solid black;
+    
+}
+
+.form-input {
+    width: 400px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    margin: 0 10px;
+}
+
+.text-input {
+    width: 800px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    margin: 0 10px;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1em;
+}
+
+.button {
+    display: inline-block;
+    width: 150px;
+    padding: 10px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #FA8258;
+    color: #F3F0DB;
+    font-size: 1.2em;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #DF3A01;    
+}
+
+.comment-admin {
+    padding: 20px;    
+    background-color: #ffffff;
+    margin-bottom: 30px;    
+}
