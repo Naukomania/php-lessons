@@ -35,7 +35,9 @@
                     // строка с данными о фанфике
                     $row = $result[$i]; 
                     // передаем функции строку, она по ней выводит краткую информацию о фанфике                    
-                    fanfic_shot_info($link, $row);
+                    
+                    $fanfic_info = fanfic_shot_info($link, $row);
+                    include 'views/fanfic-head-small.php';
                 }
                 
             ?>

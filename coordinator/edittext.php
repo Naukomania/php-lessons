@@ -30,7 +30,7 @@
         $n1 = strpos($allfile, 'admin.php"; } ?>');
         $n1 = $n1 + 16; 
         $n2 = strpos($allfile, '<div class="comments-main">');
-        $alltext = substr($allfile, $n1, $n2-$n1-10);
+        $alltext = substr($allfile, $n1, $n2-$n1-8);
      ?>
      
      <form name="edittext" action=""  method="post"> 

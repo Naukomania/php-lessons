@@ -22,13 +22,14 @@
                 for ($i=0; $i<$fanficCount; $i++) {
                     // строка с данными о фанфике
                     // передаем функции строку, она по ней выводит краткую информацию о фанфике                    
-                    fanfic_shot_info($link, $arFanfic[$i]);
+                    $fanfic_info = fanfic_shot_info($link, $arFanfic[$i]);
+                    include 'views/fanfic-head-small.php';
                 }
             ?>
         </div>
         <?php
             require_once "footer.php";
-            mysqli_close($link);
+            
         ?>
     </div>
 </body>

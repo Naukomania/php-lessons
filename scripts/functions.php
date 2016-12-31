@@ -314,7 +314,13 @@
         return $result;
     }
     
-    // функция выводит краткую информацию о фанфике для списка фанфиков
+    // 
+    /**
+	 * функция выдает массив с краткой информацией о фанфике для списка фанфиков
+	 * @param $link ресурс подключения к БД
+     * @param $row строка из БД с информацией о фанфике
+	 * @return [] массив с параметрами, которые выводятся в краткой шапке
+	 */
     function fanfic_shot_info($link, $row) {
         //извлекаем имя файла и прибавляем к нему расширение и путь
         $filename = $row['file-name'].".php";
@@ -331,16 +337,17 @@
         $size = $size/1000;
         $size = floor($size);
         if ($size==0) $size=1;
-        ?>
-            <div class="about-text">
-                <p><a class="title" href="<?= $filename?>"><?= $title?></a></p>
-                <p><span class="bold">Фандом: </span><?= $fandoms?></p>
-                <p><span class="bold">Персонажи: </span><?= $pairing?></p>
-                <p><span class="bold">Жанр: </span><?= $genre?></p>
-                <p><?= $summary?></p>
-                <p><span class="bold">Размер: </span><?= $size?>К</p>
-            </div>
-            <?php
+        
+        $shot_head = array();
+        $shot_head['title'] = $title;
+        $shot_head['filename'] =  $filename;
+        $shot_head['fandom'] =  $fandoms;
+        $shot_head['pairing'] =  $pairing;
+        $shot_head['genre'] =  $genre;
+        $shot_head['size'] =  $size;
+        
+        return $shot_head;
+        
     }
     
     // функция создает содержимое файла файл с текстом фанфика 
